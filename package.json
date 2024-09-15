@@ -1,0 +1,32 @@
+{
+  "name": "universe.xyz-auctions",
+  "version": "1.0",
+  "description": "Auction contracts for Universe.xyz",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat deploy --network",
+    "etherscan-verify": "npx hardhat verify --network",
+    "test": "npx hardhat test",
+    "export": "npx hardhat deploy --export-all ./deployments/contracts.json"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.8.3",
+    "hardhat-contract-sizer": "^2.4.0",
+    "hardhat-deploy": "^0.9.26",
+    "hardhat-gas-reporter": "^1.0.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/contracts-upgradeable": "^4.4.0",
+    "@openzeppelin/hardhat-upgrades": "^1.13.0",
+    "chai": "^4.3.4",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.7.18",
+    "dotenv": "^14.2.0"
+  }
+}
